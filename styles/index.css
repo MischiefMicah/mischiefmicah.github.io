@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    background-color: hsl(235, 18%, 26%);
+}
+
+h1, h2, h3, p {
+    font-family: roboto;
+}
+
+@media screen and (min-width:801px) {
+    main {
+        background-color: hsl(0, 0%, 100%);
+        margin: 13% auto auto auto;
+        padding: 30px;
+        height: 596.5px;
+        width: 850px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    .desktop-banner {
+        display: block;
+    }
+    
+    .mobile-banner {
+        display: none;
+    }
+    
+    .headers > h1 {
+        font-size: 42px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    
+    .headers > h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .wrapper {
+        padding: 40px 32px 10px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .checkmarks > li {
+        display: flex;
+    }
+    
+    .checkmarks {
+        padding: 0;
+        margin: 0;
+    }
+    
+    li > img {
+        padding-top: 5px;
+        margin-right: 20px;
+        align-self: start
+    }
+    
+    li > h2 {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+    
+    .email {
+        margin: 40px 32px 10px 32px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+    
+    .email > h3 {
+        font-size: 14px;
+    }
+    
+    label {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    button {
+        height: 55px;
+        border-radius: 8px;
+        background-color: hsl(235, 18%, 26%);    
+        color: hsl(0, 0%, 100%);
+        border: none;
+        font-family: roboto;
+        font-weight: 700;
+    }
+
+    button:hover {
+        background: rgb(253,29,86);
+        background: linear-gradient(103deg, rgba(253,29,86,1) 14%, rgba(252,91,69,1) 42%, rgba(252,140,69,1) 100%);
+        filter: drop-shadow(0 5px 10px rgba(220, 20, 60, 0.548));
+    }
+    
+    input {
+        padding: 0px 6%;
+        width: 87%;
+        height: 48px;
+        border-radius: 8px;
+        border: 1.5px solid hsl(231, 7%, 60%);
+        outline: none;
+        font-family: roboto;
+    }
+
+    .success {
+        display: none;
+        position: absolute;
+        height: 500px;
+        width: 450px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .success-wrapper {
+        padding: 30px 40px;
+    }
+    
+    .success-wrapper > h1 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+    
+    .success-wrapper > h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .success-wrapper > button {
+        margin: 5rem 0 0 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(0, 0%, 100%);
+        overflow: auto;
+    }
+    
+    .desktop-banner {
+        display: none;
+    }
+    
+    .mobile-banner {
+        width: 100vw;
+    }
+    
+    .wrapper {
+        padding: 10px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headers > h1 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+    
+    .headers > h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .checkmarks {
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .checkmarks > li {
+        display: flex;
+    }
+    
+    li > h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    li > img {
+        padding-top: 14px;
+        margin-right: 20px;
+        align-self: start
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .email {
+        margin: 0px 32px 10px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .email > h3 {
+        font-size: 14px;
+    }
+    
+    label {
+        padding-bottom: 30px;
+        height: 118px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    button {
+        height: 50px;
+        border-radius: 8px;
+        background-color: hsl(235, 18%, 26%);    
+        color: hsl(0, 0%, 100%);
+        border: none;
+        font-family: roboto;
+        font-weight: 700;
+    }
+    
+    input {
+        padding: 0px 6%;
+        width: 87%;
+        height: 48px;
+        border-radius: 8px;
+        border: 1.5px solid hsl(231, 7%, 60%);
+        outline: none;
+        font-family: roboto;
+    }
+    
+    .success {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+    .success-wrapper {
+        margin: 40% 32px 10px 32px;
+    }
+    
+    .success-wrapper > h1 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+    
+    .success-wrapper > h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .success-wrapper > button {
+        margin-top: 19rem;
+        width: 100%;
+    }
+}
+
