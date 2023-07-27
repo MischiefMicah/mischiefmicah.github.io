@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body onresize="resizeFunc()">
+  <main>
+        <img class="mobile-banner" src="assets/images/illustration-sign-up-mobile.svg" alt="">
+        <img class="desktop-banner" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+        <div class="desktop-wrapper">
+        <div class="wrapper">
+            <div class="headers">
+            <h1>Stay updated!</h1>
+            <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+          </div>
+            <ul class="checkmarks">
+              <li>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                <h2>Product discovery and bulding what matters</h2>
+              </li>
+              <li>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                <h2>Measuring to ensure updates are a success</h2>
+              </li>
+              <li>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                <h2>And much more!</h2>
+              </li>
+            </ul>
+          </div>
+          <div class="email">
+            <h3>Email address</h3>
+            <label for="">
+              <input placeholder="email@company.com" type="text">
+              <button onclick="sub()">Subscribe to monthly Newsletter</button>
+            </label>
+          </div>
+        </div>
+      <div class="success">
+        <div class="success-wrapper">    
+          <img src="assets/images/icon-success.svg" alt="checkmark">
+          <h1>Thanks for <br> subscribing!</h1>
+          <h2>A confirmation email has been sent to <strong class="strong-email">ash@lorecompany.com</strong>. Please open it and click the button inside to confirm your subscription</h2>
+          <button onclick="sub()">Dismiss message</button>  
+        </div> 
+      </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Micah</a>. -->
+    <script src="/newsletter-sign-up-with-success-message-main/app/index.js"></script>
+  </div>
+</body>
+</html>
